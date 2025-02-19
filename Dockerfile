@@ -1,6 +1,7 @@
 FROM node:23-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+ENV API_URL=https://cobalt-n4ak.onrender.com/
 
 FROM base AS build
 WORKDIR /app
